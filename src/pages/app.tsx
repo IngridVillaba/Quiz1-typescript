@@ -1,26 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import TypeScriptBasics from '../Quiz-1/Exercise1';
+import Person from '../Quiz-1/Exercise2';
+import Counter from '../Quiz-1/Exercise3';
+import EventHandling from '../Quiz-1/Exercise4';
+import OptionalMessage from '../Quiz-1/Exercise5';
+// import APITheme from '../Quiz-1/Exercise6';
+import GenericList from '../Quiz-1/Exercise7';
+import ReadOnlyCompt from '../Quiz-1/Exercise8';
+import UbicationInfo from '../Quiz-1/Exercise9';
+import InfoTuple from '../Quiz-1/Exercise10';
+import { isTemplateExpression } from 'typescript';
+
+
 
 function App() {
+  const typeScriptBasic = [
+    'Functions',
+    'Classes',
+    'Types',
+    'Interfaces',
+    'Modules'
+  ];
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <TypeScriptBasics basics={typeScriptBasic}/>
+      <Person name='Ingrid' lastname='Villalba' age={26} hobbies={['Play with my son,', 'listen music', 'travel']}/>
+      <Counter/>
+      <EventHandling/>
+      <OptionalMessage message='This is an optional message'/>
+      <GenericList renderItem/>
+      <ReadOnlyCompt name={['Ingrid','Villalba']}/>
+      <UbicationInfo ubication={265}/>
+      <InfoTuple/>
     </div>
   );
-}
+};
 
-export default App;
+export default App;
