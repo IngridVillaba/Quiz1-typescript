@@ -6,7 +6,7 @@ import Counter from '../Quiz-1/Exercise3';
 import EventHandling from '../Quiz-1/Exercise4';
 import OptionalMessage from '../Quiz-1/Exercise5';
 // import APITheme from '../Quiz-1/Exercise6';
-import GenericList from '../Quiz-1/Exercise7';
+// import GenericList from '../Quiz-1/Exercise7';
 import ReadOnlyCompt from '../Quiz-1/Exercise8';
 import UbicationInfo from '../Quiz-1/Exercise9';
 import InfoTuple from '../Quiz-1/Exercise10';
@@ -31,7 +31,7 @@ function App() {
       <Counter/>
       <EventHandling/>
       <OptionalMessage message='This is an optional message'/>
-      <GenericList renderItem/>
+      {/* <GenericList/> */}
       <ReadOnlyCompt name={['Ingrid','Villalba']}/>
       <UbicationInfo ubication={265}/>
       <InfoTuple/>

@@ -3,7 +3,7 @@
 
 
 import React, { useState } from 'react';
-
+import { Button } from '@mui/material';
 const EventHandling: React.FC = () => {
   const [estado, setEstado] = useState<string>('Inicial');
 
@@ -14,7 +14,7 @@ const EventHandling: React.FC = () => {
   return (
     <div>
       <h2> 4. Estado: {estado}</h2>
-      <button onClick={handleClick}>Actualizar Estado</button>
+      <Button color='error' onClick={handleClick}>Actualizar Estado </Button>
     </div>
   );
 };

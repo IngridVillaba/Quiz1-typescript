@@ -16,10 +16,10 @@ function Person ({name, lastname, age, hobbies}: PersonProps) {
     return (
         <div>
             <h2>2. Person Props</h2>
-            <Chip label= {name}/>
+            <Chip color='primary' label = {name}/>
             <Chip label= {lastname}/>
             <Chip label= {age}/>
-            <Chip label= {hobbies}/>
+            <Chip color='error' label= {hobbies}/>
         </div>
     )
 }
