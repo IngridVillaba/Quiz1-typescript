@@ -20,8 +20,11 @@ function Person ({name, lastname, age, hobbies}: PersonProps) {
             <Chip label= {lastname}/>
             <Chip label= {age}/>
             <Chip label= {hobbies}/>
-        </div>
+        </div>   
     )
+    
 }
+
+
 
 export default Person;

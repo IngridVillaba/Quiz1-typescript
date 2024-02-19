@@ -6,11 +6,13 @@ import Counter from '../Quiz-1/Exercise3';
 import EventHandling from '../Quiz-1/Exercise4';
 import OptionalMessage from '../Quiz-1/Exercise5';
 // import APITheme from '../Quiz-1/Exercise6';
-import GenericList from '../Quiz-1/Exercise7';
+// import GenericList from '../Quiz-1/Exercise7';
 import ReadOnlyCompt from '../Quiz-1/Exercise8';
 import UbicationInfo from '../Quiz-1/Exercise9';
 import InfoTuple from '../Quiz-1/Exercise10';
-import { isTemplateExpression } from 'typescript';
+
+
+
 
 
 
@@ -30,8 +32,8 @@ function App() {
       <Person name='Ingrid' lastname='Villalba' age={26} hobbies={['Play with my son,', 'listen music', 'travel']}/>
       <Counter/>
       <EventHandling/>
-      <OptionalMessage message='This is an optional message'/>
-      <GenericList renderItem/>
+      <OptionalMessage message='Hello, good day'/>
+      {/* <GenericList items={string} renderItem={(item) => <span>{item}</span>}/> */}
       <ReadOnlyCompt name={['Ingrid','Villalba']}/>
       <UbicationInfo ubication={265}/>
       <InfoTuple/>
